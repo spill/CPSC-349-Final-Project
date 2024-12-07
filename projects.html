@@ -5,6 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects {
+            text-align: center;
+        }
+
+        .projects h1 {
+            font-size: 2rem;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,26 +137,30 @@
     <main>
         <section class="projects">
             <h1>My Projects</h1>
-            <div class="project">
-                <h2>PyPort</h2>
-                <p>A tool designed for secure deletion of files and drives using industry-standard methods. Features include customizable options and a clean user interface.</p>
-                <a href="https://github.com/spill/" target="_blank" class="cta-button">View on GitHub</a>
-            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h2>PyPort</h2>
+                    <p>A tool designed for secure deletion of files and drives using industry-standard methods. Features include customizable options and a clean user interface.</p>
+                    <a href="https://github.com/spill/" target="_blank" class="cta-button">View on GitHub</a>
+                </div>
 
-            <div class="project">
-                <h2>SecureEaste Suite</h2>
-                <p>A C++ implementation of a hash table with support for dynamic resizing, efficient lookups, and customizable hash functions.</p>
-                <a href="https://github.com/spill/" target="_blank" class="cta-button">View on GitHub</a>
-            </div>
+                <div class="project-card">
+                    <h2>SecureErase Suite</h2>
+                    <p>A C++ implementation of a hash table with support for dynamic resizing, efficient lookups, and customizable hash functions.</p>
+                    <a href="https://github.com/spill/" target="_blank" class="cta-button">View on GitHub</a>
+                </div>
 
-            <div class="project">
-                <h2>Portfolio Website</h2>
-                <p>This portfolio showcases my skills, projects, and experience in web development, cybersecurity, and digital forensics.</p>
-                <a href="github.pages" target="_blank" class="cta-button">Visit Website</a>
-            <div class="project">
-                <h2>Astro Security Discord Bot</h2>
-                <p>This was a discord bot that was programmed through python to provide essential multi-purpose cyber security needs for beginners.</p>
-            </div>
+                <div class="project-card">
+                    <h2>Portfolio Website</h2>
+                    <p>This portfolio showcases my skills, projects, and experience in web development, cybersecurity, and digital forensics.</p>
+                    <a href="https://github.pages/" target="_blank" class="cta-button">Visit Website</a>
+                </div>
+
+                <div class="project-card">
+                    <h2>Astro Security Discord Bot</h2>
+                    <p>A Discord bot programmed in Python to provide essential multipurpose cybersecurity tools for beginners.</p>
+                    <a href="https://github.com/spill/" target="_blank" class="cta-button">View on GitHub</a>
+                </div>
             </div>
         </section>
     </main>

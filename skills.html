@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .skill-card {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .skill-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Skills</h1>
+        <p>Here are some of the skills I've developed over the years:</p>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Python, C++, JavaScript, HTML, CSS</p>
+            </div>
+            <div class="skill-card">
+                <h3>Cyber Security</h3>
+                <p>Network Security, Digital Forensics, Incident Response</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Technologies</h3>
+                <p>Wireshark, Splunk, TryHackMe, HackTheBox</p>
+            </div>
+            <div class="skill-card">
+                <h3>Database Management</h3>
+                <p>SQL, MongoDB, Database Design</p>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <p>Teamwork, Communication, Problem-Solving</p>
+            </div>
+            <div class="skill-card">
+                <h3>Certifications</h3>
+                <p>CompTIA Security+, Pursuing CFCE</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed and developed by Ryan Trinh | CWID: 885782201</p>
+    </footer>
+</body>
+</html>

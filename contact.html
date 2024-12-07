@@ -5,6 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Contact Information Section */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-info h1 {
+            font-size: 2rem;
+            color: #007BFF;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-info ul li a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info ul li a:hover {
+            color: #0056b3;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,9 +161,10 @@
     </header>
 
     <main>
+        <!-- Contact Info Section -->
         <section class="contact-info">
-            <h1>Contact Information</h1>
-            <p>You can reach me through the following:</p>
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me through any of the methods below:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:rtrinh02@csu.fullerton.edu">rtrinh02@csu.fullerton.edu</a></li>
                 <li><strong>Phone:</strong> (510) 364-1917</li>
@@ -31,9 +173,10 @@
             </ul>
         </section>
 
+        <!-- Contact Form Section -->
         <section class="contact-form">
             <h1>Send Me a Message</h1>
-            <p>If you have any questions, opportunities, or just want to say hello, feel free to reach out!</p>
+            <p>Have a question or an opportunity? I'd love to hear from you!</p>
             <form action="https://formspree.io/f/yourformendpoint" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
