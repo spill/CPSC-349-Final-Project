@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1E1E2C;
+            color: #F5F5F7;
+            line-height: 1.6;
             animation: fadeIn 2s ease-in;
         }
 
@@ -19,7 +23,10 @@
             padding: 0;
             display: flex;
             justify-content: space-around;
-            background-color: #333;
+            background-color: rgba(30, 30, 44, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         header nav ul li {
@@ -28,15 +35,15 @@
 
         header nav ul li a {
             text-decoration: none;
-            color: white;
+            color: #F5F5F7;
             padding: 15px 20px;
             display: inline-block;
             transition: background-color 0.3s, transform 0.3s;
         }
 
         header nav ul li a:hover {
-            background-color: #555;
-            transform: scale(1.1);
+            background-color: #007BFF;
+            border-radius: 5px;
         }
 
         main {
@@ -48,18 +55,22 @@
         /* About Section */
         .about {
             text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #2C2C44, #1E1E2C);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .about h1 {
-            font-size: 2rem;
-            color: #007BFF;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #FFD700;
         }
 
         .about p {
             font-size: 1.2rem;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.8;
+            color: #F5F5F7;
             max-width: 800px;
             margin: 0 auto 30px;
         }
@@ -81,12 +92,21 @@
             transform: scale(1.05);
         }
 
+        /* Profile Picture */
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
         /* Footer */
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background-color: #333;
-            color: white;
+            color: #F5F5F7;
             margin-top: 50px;
         }
 
@@ -94,11 +114,14 @@
             margin: 0;
         }
 
-        .profile-picture {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -107,7 +130,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -117,17 +140,18 @@
 
     <main>
         <section class="about">
+            <img src="assets/images/ryan.portfolio.jpg" alt="Ryan Trinh" class="profile-picture">
             <h1>About Me</h1>
             <p>
                 Hello! My name is Ryan Trinh, and I am a computer science major at California State University, Fullerton, with a concentration in cybersecurity. 
                 I am passionate about solving complex problems and making a meaningful impact in the field of digital forensics and cybersecurity.
             </p>
             <p>
-                During my time as a digital forensics intern at iDS, I’ve gained hands-on experience with evidence handling, chain-of-custody procedures, and 
-                advanced forensic tools. I also enjoy building tools and applications, including my secure deletion suite, SecureErase.
+                Currently, I'm interning as a Digital Forensics Analyst. Through my role, I have gained hands-on experience with Python and Shell scripting, particularly in forensic investigations. 
+                I also enjoy developing tools, such as my PyPort application, which serves as a fundamental cybersecurity utility.
             </p>
             <p>
-                When I’m not coding, you can find me exploring cybersecurity challenges on platforms like TryHackMe and HackTheBox, enhancing my skills to stay ahead in this ever-evolving field.
+                When I’m not coding, you can find me exploring cybersecurity challenges on platforms like TryHackMe and HackTheBox, continuously enhancing my skills to stay ahead in this ever-evolving field.
             </p>
             <a href="assets/resume/RT.resume.pdf" class="cta-button" download>Download My Resume</a>
         </section>
