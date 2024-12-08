@@ -62,7 +62,7 @@ The goal is to create a user-friendly, visually appealing platform to demonstrat
 
 ## Live Demo
 
-Check out the live version of the website [here](#).
+Check out the live version of the website [here](#https://spill.github.io/CPSC-349-Final-Project/index.html).
 
 ---
 
